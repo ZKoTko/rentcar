@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAR RENT</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- Slick -->
+ <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+ <link rel="stylesheet" href="assets/css/slick-theme.css">
+ <!-- Links -->
+ <link rel="stylesheet" href="assets/css/main.css">
+ <style>
+  .slick-next {
+    background-image: url(assets/img/arrow.png) !important;    
+    background-position: center;
+    background-size: cover;
+  }
+  .slick-prev {
+    background-image: url(assets/img/arrow.png) !important;    
+    background-position: center;
+    background-size: cover;
+  }
+  .catalog_card__img {
+    height: 325px;
+  }
+  @media only screen and (min-width: 300px) {
+    .catalog_card__img {
+      height: 200px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .catalog_card__img {
+      height: 325px;
+    }
+  }
+ </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">მანქანების გაქირავება</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">მთავარი</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">კატალოგი</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">კონტაქტი</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">+995-555-55-55-55</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal_reservate" tabindex="-1"  aria-labelledby="modal_reservate__label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="form_title">
+          <h3>დაჯაშვნე მანქანა</h3>
+          <p>შეიყვანე მონაცემები და აირჩიე სასურველი მანქანა, რის შემდეგ ჩვენ დაგიკავშირდებით</p>
+        </div>
+        <form action="send" class="form">
+          <div class="form_container">
+            <input type="text" placeholder="სახელი">
+            <input type="text" placeholder="გვარი">
+            <input type="number" placeholder="ტელეფონი">
+            <select name="" id="">
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+              <option value="">მანქანა</option>
+            </select>
+            <button data-dismiss="modal" class="orange_btn">გაგზავნა</button>
+          </div>
+        </form>
+        <button class="btn_modal__close" data-dismiss="modal" aria-label="close"><i class="fas fa-window-close"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Catalog Section -->
+  <section class="catalog">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="catalog_title col-lg-12 col-md-12 col-sm-12">
+          <h1>მანქანების კატალოგი</h1>
+          <p>მანქანების კატალოგი</p>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider1">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev1 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next1 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider2">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev2 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next2 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider3">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev3 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next3 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider4">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev4 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next4 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider5">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev5 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next5 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="catalog_card">
+            <div class="catalog_card__wrapper">
+              <div class="catalog_card__img__wrapper">    
+                <div class="catalog_slider6">
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                  <div class="catalog_card__img" style="background-image: url(assets/img/card_img.jpg);"></div>
+                </div>
+                <button class="catalog_card__prev prev6 slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-chevron-circle-left"></i></button>
+                <button class="catalog_card__next next6 slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-chevron-circle-right"></i></button>
+              </div>
+              <div class="catalog_card__text">
+                <b>ინფორმაცია</b> <b>ინფორმაცია</b> ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია ინფორმაცია 
+              </div>
+              <button class="orange_btn" data-toggle="modal" data-target="#modal_reservate" >დაჯაშვნე</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </section>
+
+  
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        Footer
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.catalog_slider1').slick({
+          infinite: true,
+          prevArrow: $('.prev1'),
+          nextArrow: $('.next1'),
+        });
+      });
+      $(document).ready(function(){
+        $('.catalog_slider2').slick({
+          infinite: true,
+          prevArrow: $('.prev2'),
+          nextArrow: $('.next2'),
+        });
+      });
+      $(document).ready(function(){
+        $('.catalog_slider3').slick({
+          infinite: true,
+          prevArrow: $('.prev3'),
+          nextArrow: $('.next3'),
+        });
+      });
+      $(document).ready(function(){
+        $('.catalog_slider4').slick({
+          infinite: true,
+          prevArrow: $('.prev4'),
+          nextArrow: $('.next4'),
+        });
+      });
+      $(document).ready(function(){
+        $('.catalog_slider5').slick({
+          infinite: true,
+          prevArrow: $('.prev5'),
+          nextArrow: $('.next5'),
+        });
+      });
+      $(document).ready(function(){
+        $('.catalog_slider6').slick({
+          infinite: true,
+          prevArrow: $('.prev6'),
+          nextArrow: $('.next6'),
+        });
+      });
+    </script>
+  </body>
+</html>
+    
+
+

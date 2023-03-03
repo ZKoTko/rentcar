@@ -1,0 +1,357 @@
+/* Main */
+
+@font-face {
+    font-family: "BPG ExtraSquare Mtavruli"; 
+    src: url("../fonts/bpg_extrasquare_mtavruli_2009.woff");
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+* {
+    font-family: "BPG ExtraSquare Mtavruli"; 
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+/* Bootstrap */
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.0) !important; 
+}
+
+.navbar {
+    padding: 15px 10px;
+    -webkit-box-shadow: 0px 0.5px 2px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0.5px 2px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 0.5px 2px 0px rgba(0,0,0,0.16);
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+footer {
+    -webkit-box-shadow: 0px -0.5px 1px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -0.5px 1px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px -0.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: #000 !important; 
+    transition: all .1s linear;
+}
+.nav-link:hover {
+    color: #fd6c1e !important;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+/* Carousel */
+.carousel-item {
+    height: 600px;  
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+} 
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+.carousel {
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* Banner */
+.banner_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    right: 20%;
+    top: 20%;
+    margin: 0 auto;
+    color: #fff;
+    opacity: 1;
+    position: relative !important;
+}
+
+.banner_title h2 {
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.banner_title p {
+    font-size: 25px;
+}
+
+/* Catalog */
+.catalog {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.catalog_title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.catalog_title p {
+    color: #f7600f;
+    font-size: 20px;
+}
+
+.catalog_btn__wrapper {
+    text-align: center;
+}
+
+.orange_btn {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: #fd6c1e;
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 6px;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.orange_btn:hover {
+    background: #f7600f;
+    opacity: 0.8;
+}
+
+.orange_btn:active {
+    box-shadow: inset 0px 0.1em 0.6em #e9651e;
+    transform: translateY(0em);
+}
+
+/* Catalog cards */
+
+.catalog_card {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.catalog_card__wrapper {
+    padding: 2%;
+}
+
+.catalog_card__img {
+    height: 200px;
+    width: 100%;
+    border-radius: 6px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.catalog_card__img__wrapper {
+    margin-bottom: 15px;
+    position: relative;
+}
+.catalog_card__text b {
+    color: #fd6c1e;
+}
+.catalog_card__wrapper .orange_btn{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.catalog_card__prev {
+    position: absolute;
+    top: 43%;
+    border: 0;
+    outline: 0;
+    background: none;
+    height: 32px;
+}
+.catalog_card__next {
+    position: absolute;
+    top: 43%;
+    border: 0;
+    outline: 0;
+    background: none;
+    height: 32px;
+}
+.catalog_card__prev i {
+    color: #fff;
+    opacity: 0.9;
+    font-size: 32px;
+}
+.catalog_card__next i {
+    color: #fff;
+    opacity: 0.9;
+    font-size: 32px;
+}
+.catalog_card__prev:hover, .catalog_card__next:hover i {
+    opacity: 1.1;
+}
+.catalog_card__prev {
+    left: 2%;
+}
+.catalog_card__next {
+    right: 2%;
+}
+
+.catalog_card__prev img {
+    width: 25px;
+    height: 25px;
+    transform: rotateY(180deg);
+    
+}
+
+.catalog_card__next img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Form */
+.form_container {
+    display: flex;
+    flex-direction: column;
+}
+.form_container input {
+    height: 45px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.form_container select {
+    height: 45px;
+    margin-bottom: 15px;
+}
+.modal-content {
+    padding: 30px;
+}
+.btn_modal__close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    border: 0;
+    outline: 0;
+    background: none;
+    font-size: 25px;
+    color: #f7600f;
+}
+.form_title {
+    text-align: center;
+}
+.form_title p {
+    color: #f7600f;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    .orange_btn {
+        font-size: 16px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+    .banner_title {
+        right: 0%;
+    }
+    .banner_title h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .banner_title p {
+        font-size: 15px;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    .orange_btn {
+        font-size: 16px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+    .banner_title {
+        right: 0%;
+    }
+    .banner_title h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .banner_title p {
+        font-size: 15px;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .banner_title h2 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+    .banner_title p {
+        font-size: 25px;
+    }
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner_title h2 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+    .banner_title p {
+        font-size: 25px;
+    }
+    .carousel-item {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner_title {
+        right: 20%;
+    }
+    .carousel-item {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-link {
+        font-size: 20px;
+    }
+    .orange_btn {
+        font-size: 18px;
+    }
+}
