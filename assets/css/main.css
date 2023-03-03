@@ -286,7 +286,7 @@ footer {
 
 @media only screen and (min-width: 320px) {
     .nav-link {
-        font-size: 14px;
+        font-size: 16px;
     }
     .orange_btn {
         font-size: 16px;
@@ -310,6 +310,9 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+    .nav-link {
+        font-size: 14px;
+    }
     .navbar-brand {
         font-size: 20px;
     }
